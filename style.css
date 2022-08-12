@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Syncopate:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    transition: .3s;
+    
+}
+
+.light{
+    background-color: #fff;
+}
+
+.dark{
+    background-color: #000;
+}
+
+.nav-wrapper{
+    position:relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 70px;
+}
+.header::after,
+.our-project::after,
+.nav-wrapper::after,
+.contact::after{
+    content: '';
+    display: block;
+    width: 1720px;
+    height: 2px;
+    z-index: 1;
+}
+
+.header::after,
+.our-project::after,
+.contact::after{
+    margin: 100px auto;
+}
+
+.nav-wrapper::after{
+    margin:0 auto;
+}
+
+.wrapper{
+    height:100%;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    width: 1720px;
+    margin: 0 auto;
+}
+
+.list-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-button{
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav-button a{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.name-company{
+    font-size: 24px;
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 700;
+}
+
+.change-theme{
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 76px;
+    height: 38px;
+    border-radius: 19px;
+}
+
+#toggle{
+    display: none;
+}
+
+.sun,
+.moon {
+    font-size: 22px;
+    margin: 8px;
+    z-index: 1;
+}
+
+.ball{
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    transition: .3s ease-out;
+}
+
+.settings{
+    font-size: 20px;
+}
+
+/* wrap main entry */
+
+.wrap-main-entry{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 100px 0 100px 0;
+    overflow: hidden;
+}
+
+.main-entry{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.text-main-entry{
+    color: rgba(0,0,0,0);
+    margin-right: 45px;
+}
+
+.text-main-entry:last-child{
+    margin-right: 0;
+}
+
+.text-main-entry,
+.text-main-entry span{
+    font-size: 72px;
+    font-weight: 700;
+    font-family: 'Syncopate', sans-serif;
+    white-space: nowrap;
+}
+
+.text-main-entry span{
+    -webkit-text-stroke: 0px;
+}
+
+/* THEME */
+
+.light .header::after,
+.light .nav-wrapper::after,
+.light .our-project::after,
+.light .contact::after{
+    background-color:#ECEFF1;
+}
+
+.dark .header::after,
+.dark .nav-wrapper::after,
+.dark .our-project::after,
+.dark .contact::after{
+    background-color:#212121;
+}
+
+.light .nav-button a,
+.light .name-company{
+    color:#000;
+}
+
+.dark .nav-button a,
+.dark .name-company{
+    color:#EEEEEE;
+}
+
+.light .change-theme{
+    border: 2px solid black;
+}
+
+.dark .change-theme{
+    border: 2px solid white;
+}
+
+.light .sun{
+    color: #fff;
+}
+
+.dark .sun{
+    color: #fff;
+}
+
+.light .moon{
+    color: #000;
+}
+
+.light .ball{
+    background: #000;
+    left: -1px;
+}
+
+.dark .ball{
+    background: #fff;
+    transform: translateX(35px);
+}
+
+.light .text-main-entry{
+    -webkit-text-stroke: 1px #000;
+}
+
+.dark .text-main-entry{
+    -webkit-text-stroke: 1px #fff;
+}
+
+.light .text-main-entry span,
+.dark .settings{
+    color:#000;
+}
+
+.dark .text-main-entry span,
+.dark .settings{
+    color:#fff;
+}
+
+
+
+.light .link-our-project a,
+.light .link-our-project i{
+    color: #000;
+}
+
+.dark .link-our-project a,
+.dark .link-our-project i{
+    color: #fff;
+}
+
+.light .reviews,
+.light .name-responder{
+    color: #000;
+}
+
+.dark .reviews,
+.dark .name-responder{
+    color: #fff;
+} 
+
+.light .we-about-us{
+    background: #FAFAFA;
+}
+
+.dark .we-about-us{
+    background: #1F1F1F;
+}
+
+.dark .name-section{
+    color: #eeeeee;
+}
+
+.dark .form input{
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.light #send-form,
+.light .block-mail h3,
+.light .block-phone h3{
+    color:#000;
+}
+
+.dark #send-form,
+.dark .block-mail h3,
+.dark .block-phone h3{
+    color:#eee;
+}
+
+/* ######     2  СЕКЦИЯ      ######*/
+.wrap-project{
+    overflow: hidden;
+}
+
+.image-project{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.image-project img{
+    width: 1320px;
+    height: 881px;
+    margin-right: 100px;
+}
+
+.image-project img:last-child{
+    margin-right: 0;
+}
+
+.wrap-main-entry{
+    margin-bottom: 100px;
+}
+
+.style-project,
+.style-project span
+{
+    font-size: 48px;
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.style-project span{
+    color: #000;
+    font-size: 70px;
+}
+
+.link-our-project{
+    align-items: center;
+    text-align: center;
+}
+
+.link-our-project a{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.arrow-right{
+    font-size: 16px;
+    color:#000;
+    margin-left: 14px;
+}
+
+
+/* #####    СЕКЦИЯ С ОТЗЫВАМИ    ##### */
+.wrap-block-reviews{
+    margin-bottom: 100px;
+}
+
+.block-reviews{
+    text-align: center;
+}
+
+.reviews{
+    font-size: 72px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 100px auto;
+}
+
+.name-responder{
+    font-size: 24px;
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.activity{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #9E9E9E;
+}
+
+
+/* #####    СЕКЦИЯ "ГАЛЕРЕЯ"    ##### */
+
+.gallery,
+.img-galery{
+    margin-bottom: 100px;
+}
+
+.img-galery{
+    max-width: 100%;
+}
+
+.img-galery img{
+    width: 100%;
+    height: auto;
+}
+
+/* #####     СЕКЦИЯ "МЫ О СЕБЕ"     ##### */
+.we-about-us{
+    padding: 100px 0;
+    margin-bottom: 100px;
+}
+
+.wrap-autobiography{
+    text-align: center;
+}
+
+
+/* #####    СЕКЦИЯ С ОТПРАВКОЙ ФОРМЫ    ##### */
+
+.name-section{
+    width: 62%;
+    margin-bottom: 100px;
+}
+
+.name-section h2{
+    font-size: 48px;
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.name-section p{
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 44px;
+}
+
+.wrap-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.wrap-form::after{
+    content: '';
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 433px;
+    height: 2px;
+    background: #ECEFF1;
+    transform: translateX(-50%)rotate(90deg);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 705px;
+}
+
+.form input{
+    outline: 0;
+    border: 0;
+    height: 50px;
+    border-bottom: 1px solid black;
+    margin-bottom: 50px;
+    background: inherit;
+}
+
+#send-form{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    width: min-content;
+    border: 0;
+    outline: 0;
+    background: inherit;
+    cursor: pointer;
+}
+
+.contact-us,
+.form input::placeholder{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.block-mail{
+    margin-bottom: 50px;
+}
+
+.block-phone,
+.block-mail{
+    line-height: 30px;
+    color: #9E9E9E;
+}
+
+
+/* #####    СЕКЦИЯ "FOOTER"    ##### */
+
+.nav-footer{
+    margin-bottom: 100px;
+}
+
+.wrap-nav-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-nav-footer{
+    width: 547px;
+}
+
+.social-networks{
+    width: 202px;
+}
+
+
+
+/*  $$$$$$$$$     ВСЕ ПРАВА ЗАЩИЩЕНЫ     $$$$$$$$ */
+
+.site-stub{
+    height: 100px;
+    background: #ECEFF1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-stub-text p{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #9E9E9E;
+}
