@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Architecture</title>
 </head>
 <body class="light">
         
@@ -54,7 +54,7 @@
         <div class="wrap-main-entry">
             <div class="main-entry">
                 <p class="text-main-entry">we build magic</p>
-                <p class="text-main-entry"> <span>we build magic</span> </p>
+                <p class="text-main-entry active">we build magic</p>
                 <p class="text-main-entry">we build magic</p> 
             </div>
         </div>
@@ -69,16 +69,18 @@
         <div class="wrap-project">
             <div class="wrap-image-project">
                 <div class="image-project">
-                    <img src="./images/наши проекты/2.png" alt="">
-                    <img src="./images/наши проекты/2.png" alt="">
-                    <img src="./images/наши проекты/2.png" alt="">
+                    <img class="slide-image" src="./images/наши проекты/3.jpg" alt="">
+                    <img class="slide-image" src="./images/наши проекты/1.png" alt="">
+                    <img class="slide-image" src="./images/наши проекты/3.jpg" alt="">
+                    <img class="slide-image" src="./images/наши проекты/2.jpg" alt="">
+                    <img class="slide-image" src="./images/наши проекты/1.png" alt="">  
                 </div>
             </div>
             <div class="wrap-main-entry">
-                <div class="main-entry">
+                <div class="main-entry block-slider">
                     <p class="text-main-entry style-project">dark urban</p>
                     <p class="text-main-entry style-project">uncovered</p>
-                    <p class="text-main-entry style-project active"><span>concrete graden</span></p> 
+                    <p class="text-main-entry style-project">concrete graden</p> 
                     <p class="text-main-entry style-project">city vision</p>
                     <p class="text-main-entry style-project">futurama</p> 
                 </div>
@@ -90,6 +92,12 @@
                         <i class="fa-solid fa-arrow-right-long arrow-right"></i>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="wrap-modal-img">
+            <div class="wrap-active-element">
+                <img src="#" class="modal-img">
+                <button class="close-modal">X</button>
             </div>
         </div>
     </section>
@@ -277,6 +285,10 @@
     </section>
         
     <script src="https://kit.fontawesome.com/6cc7a0ca66.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    
+    <script src="./src/script.js"></script>
+
+    <script src="./src/slider.js"></script>
+    
 </body>
 </html>
