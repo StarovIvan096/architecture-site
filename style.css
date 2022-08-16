@@ -122,7 +122,7 @@ body{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
     margin: 100px 0 100px 0;
     overflow: hidden;
 }
@@ -131,6 +131,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+
+.wrap-main-entry .company-work{
+    animation: moveString 20s linear infinite alternate;
 }
 
 .text-main-entry{
@@ -152,6 +157,22 @@ body{
 .main-entry .active{
     font-size: 80px;
     -webkit-text-stroke: 0px;
+}
+
+.description-of-our-work-1{
+    animation: descriptionWork1 26s linear infinite alternate;
+}
+
+.description-of-our-work-2{
+    animation: descriptionWork2 27s linear infinite alternate;
+}
+
+.description-of-our-work-3{
+    animation: descriptionWork3 30s linear infinite alternate;
+}
+
+.description-of-our-work-4{
+    animation: descriptionWork4 35s linear infinite alternate;
 }
 
 /* THEME */
@@ -567,4 +588,51 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     color: #9E9E9E;
+}
+
+
+
+@keyframes moveString {
+    0%{
+        transform: translateX(-10%);
+    }
+    100%{
+        transform: translateX(-30%);
+    }
+}
+
+@keyframes descriptionWork1 {
+    0%{
+        transform: translateX(-3%);
+    }
+    100%{
+        transform: translateX(-33%);
+    }
+}
+
+@keyframes descriptionWork2 {
+    0%{
+        transform: translateX(-2%);
+    }
+    100%{
+        transform: translateX(-34%);
+    }
+}
+
+@keyframes descriptionWork3 {
+    0%{
+        transform: translateX(-5%);
+    }
+    100%{
+        transform: translateX(-30%);
+    }
+}
+
+@keyframes descriptionWork4 {
+    0%{
+        transform: translateX(-3%);
+    }
+    100%{
+        transform: translateX(-42%);
+    }
 }
