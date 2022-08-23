@@ -19,22 +19,22 @@
                                 <a href="#">home</a>
                             </li>
                             <li class="nav-button">
-                                <a href="#">projects</a>
+                                <a href="#our-project">projects</a>
                             </li>
                             <li class="nav-button">
-                                <a href="#">clients</a>
+                                <a href="#reviews">clients</a>
                             </li>
                             <li class="nav-button">
-                                <a href="#">gallery</a>
+                                <a href="#gallery">gallery</a>
                             </li>
                             <li class="nav-button">
                                 <h3 class="name-company">architectural</h3>
                             </li>
                             <li class="nav-button">
-                                <a href="#">about us</a>
+                                <a href="#we-about-us">about us</a>
                             </li>
                             <li class="nav-button">
-                                <a href="#">contact</a>
+                                <a href="#contact">contact</a>
                             </li>
                             <li class="nav-button">
                                 <div class="change-theme">
@@ -65,7 +65,7 @@
         </div>
     </section>
 
-    <section class="our-project">
+    <section class="our-project" id="our-project">
         <div class="wrap-project">
             <div class="wrap-image-project">
                 <div class="image-project">
@@ -102,7 +102,7 @@
         </div>
     </section>
 
-    <section class="reviews">
+    <section class="reviews" id="reviews">
         <div class="container">
             <div class="wrap-block-reviews">
                 <div class="block-reviews">
@@ -126,7 +126,7 @@
         </div>
     </section>
 
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <div class="img-galery">
             <img src="./images/галерея/1.png" alt="">
         </div>
@@ -140,7 +140,7 @@
         </div>
     </section>
 
-    <section class="we-about-us">
+    <section class="we-about-us" id="we-about-us">
         <div class="wrap-autobiography">
             <div class="wrap-main-entry">
                 <div class="main-entry description-of-our-work-1">
@@ -201,7 +201,7 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <div class="name-section">
                 <h2>contact us</h2>
@@ -209,11 +209,11 @@
             </div>
             <div class="wrap-form">
                 <form class="form" action="">
-                    <input type="text" name="text-name" id="text-name" placeholder="Your Name">
-                    <input type="email" name="email" id="email" placeholder="you@email.com">
-                    <input type="text" name="text-number" id="text-number" placeholder="+1 408 123 4567">
-                    <input type="text" name="text-message" id="text-message" placeholder="Message">
-                    <button id="send-form">send</button>
+                    <input type="text" name="user-name" id="text-name" placeholder="Your Name">
+                    <input type="email" name="user-email" id="email" placeholder="you@email.com">
+                    <input type="text" name="user-number" id="text-number" placeholder="+7 (999) 999-99-99">
+                    <input type="text" name="user-message" id="text-message" placeholder="Message">
+                    <button type="submit" id="send-form">send</button>
                 </form>
                 <div class="contact-us">
                     <div class="block-mail">
@@ -227,6 +227,11 @@
                 </div>
             </div>
         </div>
+        <div class="wrap-modal-window-form">
+            <div class="modal-window">
+                <p>Thanks for your application!</p>
+            </div>
+        </div>
     </section>
 
     <footer class="nav-footer">
@@ -238,19 +243,19 @@
                         <a href="#">home</a>
                     </li>
                     <li class="nav-button">
-                        <a href="#">projects</a>
+                        <a href="#our-project">projects</a>
                     </li>
                     <li class="nav-button">
-                        <a href="#">clients</a>
+                        <a href="#reviews">clients</a>
                     </li>
                     <li class="nav-button">
-                        <a href="#">gallery</a>
+                        <a href="#gallery">gallery</a>
                     </li>
                     <li class="nav-button">
-                        <a href="#">about us</a>
+                        <a href="#we-about-us">about us</a>
                     </li>
                     <li class="nav-button">
-                        <a href="#">contact</a>
+                        <a href="#contact">contact</a>
                     </li>
                 </ul>
                 <ul class="list-nav social-networks">
@@ -285,10 +290,7 @@
     </section>
         
     <script src="https://kit.fontawesome.com/6cc7a0ca66.js" crossorigin="anonymous"></script>
-    
-    <script src="./src/script.js"></script>
-
-    <script src="./src/slider.js"></script>
-    
+    <script src="./src/modules/plugin.js"></script>
+    <script src="./dist/main.js"></script>
 </body>
 </html>
